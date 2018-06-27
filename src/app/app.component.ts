@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import {PlantCell} from '../app/Cell';
 
 @Component({
   selector: 'app-root',
@@ -6,5 +7,12 @@ import { Component } from '@angular/core';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'app';
+  constructor() {
+    this.niko = 'chumbest boy';
+    this.PlantCell.subCellularComponants.geneticMaterial 
+  }
+  public niko: string;
+  public PlantCell: PlantCell  = new PlantCell('Rice Plant Cell');
+
+ 
 }
